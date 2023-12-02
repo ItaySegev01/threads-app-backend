@@ -11,6 +11,7 @@ import { MongooseModule } from '@nestjs/mongoose';
     CommentsModule,
     MongooseModule.forRoot(
       'mongodb+srv://itaysegev:Ntu4qGflsrrup2qD@threads-app.htblzc9.mongodb.net/?retryWrites=true&w=majority',
+      {},
     ),
   ],
   controllers: [AppController],
