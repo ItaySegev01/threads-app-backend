@@ -4,13 +4,15 @@ import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { CommentsModule } from './comments/comments.module';
 import { MongooseModule } from '@nestjs/mongoose';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
     UsersModule,
     CommentsModule,
+    ConfigModule.forRoot({}),
     MongooseModule.forRoot(
-      'mongodb+srv://itaysegev:Ntu4qGflsrrup2qD@threads-app.htblzc9.mongodb.net/?retryWrites=true&w=majority',
+      'Your_STRING',
       {},
     ),
   ],
